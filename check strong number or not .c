@@ -23,7 +23,7 @@ int Strongnumber(int n) {
    else
       return 0;
 }
-int main(int argc, char const *argv[]) {
+int main() {
    int n = 145;
    if (Strongnumber(n))
       printf("Yes it is a strong number\n");
