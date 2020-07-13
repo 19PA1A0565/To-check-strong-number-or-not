@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-int factorial(int r) {
+int factorial(int number) {
    int fact = 1;
-   while(r>1) {
-      fact = fact * r;
-      r--;
+   while(number>1) {
+      fact = fact * number;
+      number--;
    }
    return fact;
 }
-int check(int n) {
-   int temp, rem, result = 0;
+int Strongnumber(int n) {
+   int temp ;
+   int rem ;
+   int result = 0;
    temp = n;
    while(temp) {
       rem = temp % 10;
@@ -23,7 +25,7 @@ int check(int n) {
 }
 int main(int argc, char const *argv[]) {
    int n = 145;
-   if (check(n))
+   if (Strongnumber(n))
       printf("Yes it is a strong number\n");
    else
       printf("no it is not a strong number\n");
